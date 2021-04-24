@@ -1,0 +1,42 @@
+<html>
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="api.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="api.js"></script>
+  </head>
+  <body id="body">
+    <h3>Carga de ficheros</h3>
+    <div>
+      <input
+        type="file"
+        id="file"
+        name="file"
+        onchange="handleFileSelect(event)"
+      />
+    </div>
+    <div>
+      <output id="list">
+        <figure id="figure"></figure>
+      </output>
+    </div>
+
+    <div id="botonera" class="botonera" style="display: none">
+      <button onclick="document.getElementById('video').play();">
+        Reproducir
+      </button>
+      <button onclick="document.getElementById('video').pause();">Pausa</button>
+      <button onclick="subirVolumen()">
+        Subir Volumen
+      </button>
+      <button onclick="bajarVolumen()">
+        Bajar Volumen
+      </button>
+    </div>
+  </body>
+</html>
